@@ -1,41 +1,50 @@
 let selectElementsStartingWithA = (array) => {
-    return 'Write your method here';
+    return array.filter((fruit) => fruit.startsWith("a"));
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    return array.filter(str => /^[aeiou]/i.test(str));
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    return array.filter(element => {
+        return element !== null;
+      });
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+    return array.filter(e => (e === 0 || e));
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+    
+   return array.map(word => word.split("").reverse().join(""));
+   
 }
 
 let everyPossiblePair = (array) => {
-    return 'Write your method here';
+    
 }
 
 let allElementsExceptFirstThree = (array) => {
-    return 'Write your method here';
+    return array.slice(3,);
 }
 
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here';
+    return 
 }
-
 let sortByLastLetter = (array) => {
-    return 'Write your method here';
+    return 
 }
 
 let getFirstHalf = (string) => {
-    return 'Write your method here';
+    
+        if (string.length % 2 == 0) {
+          return string.slice(0, string.length / 2);
+        }
+        return string;
+      
+          
 }
 
 let makeNegative = (number) => {

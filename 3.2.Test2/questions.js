@@ -24,25 +24,31 @@ let AjoutElementNombres =  (nombres) => {
 }
 
 let SuppressionPremierElement =  (langages) => {
-    
+    langages.splice(0, 1);
+    return langages
+
 }
 
 let SuppressionDernierElement =  (langages) => {
-
+    langages.pop();
+    return langages
 }
 
 let ConversionChaineTableau =  (reseaux_sociaux_chaine) => {
-
+    return reseaux_sociaux_chaine.split(","); 
+    
+    
 }
 
 let ConversionTableauChaine =  (langages) => {
+    return langages.toString(",");
 
 }
 
 let TriTableau =  (reseaux_sociaux) => {
-
+    return reseaux_sociaux.sort();
 }
 
 let InversionTableau =  (langages) =>{
-
+    return langages.reverse();
 }
